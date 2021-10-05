@@ -11,8 +11,12 @@ namespace StackAndQueue
         {
             this.top = null;
         }
+
+        //Method to Add values to the Stack
+
         internal void push(int value)
         {
+            Console.WriteLine();
             Node node = new Node(value);
             if (this.top == null)
             {
@@ -25,6 +29,8 @@ namespace StackAndQueue
             this.top = node;
             Console.WriteLine("the value that is pushed   " + value);
         }
+
+        //Method Display
         internal void display()
         {
             Node temp = this.top;
